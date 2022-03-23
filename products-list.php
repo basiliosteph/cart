@@ -22,33 +22,14 @@ $customer = new Customer('Stephanie Basilio', 'basilio.stephanie@auf.edu.ph');
     <div class="container-fluid justify-content-center justify-content-md-between">
       <div class="d-flex my-2 my-sm-0">
         <a class="navbar-brand me-2 mb-1 d-flex justify-content-center" href="#">
-          <img src="sm.png" height="50" alt=""
-            loading="lazy" />
+          <img src="sm.png" height="120" alt="" loading="lazy" />
         </a>
 
-        <ul class="navbar-nav flex-row">
-        <li class="nav-item me-3 me-lg-0">
-          <a class="nav-link" href="#" role="button" data-mdb-toggle="sidenav" data-mdb-target="#sidenav-1"
-            class="btn shadow-0 p-0 me-3" aria-controls="#sidenav-1" aria-haspopup="true">
-            <i class="fas fa-bars me-1"></i>
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart-check" viewBox="0 0 16 16">
-</svg>
-          </a>
-
-          </li>
-        <li class="nav-item me-3 me-lg-0">
-          <a class="nav-link" href="shopping-cart.php">
-          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search-heart" viewBox="0 0 16 16">
-</svg>
-          </a>
-        </li>
 </div>
 </nav>
-
-<h1>Welcome <?php echo $customer->getName() ?>!</h1>
 <div id="products_header">
 <img id="products_img" src="ningning.jpg" class="img-fluid" alt="..." width="100%">
-<div class="centered"><h1>Products</h1></div>
+<div class="centered"><h1>Welcome <?php echo $customer->getName() ?>!</h1></div>
 </div>
 
 <style>
@@ -61,16 +42,12 @@ $customer = new Customer('Stephanie Basilio', 'basilio.stephanie@auf.edu.ph');
 
 .centered h1 {
     font-size:  80px;
+    position: right;
     color: white;
 }
 
-
 #products_img {
-   opacity: 0.3;
-}
-
-span {
-    padding-left: 20px;
+   opacity: 0.5;
 }
 
 .card {
