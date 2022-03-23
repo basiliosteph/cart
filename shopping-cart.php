@@ -71,7 +71,7 @@ $shoppingCartItems = $shoppingCart->getAllItems();
             }
             </style>
             <a href="shopping-cart.php">
-              <img src="shopping.jpg" alt="" width="30" height="30">
+              <img src="kart.png" alt="" width="30" height="30">
             </a>
           </span>
       </div>
