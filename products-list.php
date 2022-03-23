@@ -23,6 +23,13 @@ $customer = new Customer('Stephanie Basilio', 'basilio.stephanie@auf.edu.ph');
       <div class="d-flex my-2 my-sm-0">
         <a class="navbar-brand me-2 mb-1 d-flex justify-content-center" href="#">
           <img src="sm.png" height="120" alt="" loading="lazy" />
+          <div class="collapse navbar-collapse" id="navbarText">
+      <span class="nav-item">
+            <a class="nav-link active" href="shopping-cart.php">View Cart</a>
+        </span>
+        <span>
+        </span>
+        </li>
         </a>
 
 </div>
