@@ -46,9 +46,8 @@ $customer = new Customer('Stephanie Basilio', 'basilio.stephanie@auf.edu.ph');
 </nav>
 
 <h1>Welcome <?php echo $customer->getName() ?>!</h1>
-<h2>Products</h2>
 <div id="products_header">
-<img id="products_img" src="productheader5.jpg" class="img-fluid" alt="..." width="100%">
+<img id="products_img" src="ningning.jpg" class="img-fluid" alt="..." width="100%">
 <div class="centered"><h1>Products</h1></div>
 </div>
 
@@ -62,7 +61,7 @@ $customer = new Customer('Stephanie Basilio', 'basilio.stephanie@auf.edu.ph');
 
 .centered h1 {
     font-size:  80px;
-    color: white;
+    color: black;
 }
 
 
@@ -82,13 +81,21 @@ span {
     width:  350px;
 }
 
+#products_header {
+  position: relative;
+  text-align: center;
+    background: linear-gradient(180deg, rgba(88,37,5,1) 0%, rgba(47,27,14,1) 35%);
+    overflow: hidden;
+}
+
 #title_card {
     font-size: 30px;
 }
 
 #button_style {
-    background:  #ffc0cb;
-    border-color: #ffc0cb;
+    background:  #ffffff;
+    border-color: #ffffff;
+    color: #ffc0cb;
     margin-top: 20px;
     margin-left: 50%;
     object-position: center;
@@ -110,7 +117,7 @@ span {
         <h5 class="card-title" id="title_card"><?php echo $product->getName(); ?></h5>
     <p class="card-text">
         <?php echo $product->getDescription(); ?><br/>
-        <span style="color: pink; font-weight: bold;">PHP <?php echo $product->getPrice(); ?></span>
+        <span style="color: white; font-weight: bold;">PHP <?php echo $product->getPrice(); ?></span>
         Qty <input id="quantity_style" type="number" name="quantity" class="quantity" value="" />
         <button class="btn btn-primary" id ="button_style" type="submit"> 
             ADD TO CART
