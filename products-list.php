@@ -61,7 +61,7 @@ $customer = new Customer('Stephanie Basilio', 'basilio.stephanie@auf.edu.ph');
 
 .centered h1 {
     font-size:  80px;
-    color: black;
+    color: white;
 }
 
 
@@ -84,7 +84,7 @@ span {
 #products_header {
   position: relative;
   text-align: center;
-    background: linear-gradient(180deg, rgba(88,37,5,1) 0%, rgba(47,27,14,1) 35%);
+    background: linear-gradient(200deg, rgba(100,37,5,1) 0%, rgba(47,27,14,1) 35%);
     overflow: hidden;
 }
 
@@ -129,27 +129,5 @@ span {
   </div>
   </div>
 </form>
-<h4>
-    <a href="shopping-cart.php">Shopping Cart</a>
-</h4>
-
-<?php foreach ($products as $product): ?>
-
-<form action="add-to-cart.php" method="POST">
-    <input type="hidden" name="product_id" value="<?php echo $product->getId(); ?>" />
-    <h3><?php echo $product->getName(); ?></h3>
-    <img src="<?php echo $product->getImage(); ?>" height="100px" />
-    <p>
-        <?php echo $product->getDescription(); ?><br/>
-        <span style="color: blue">PHP <?php echo $product->getPrice(); ?></span>
-        Qty <input type="number" name="quantity" class="quantity" value="0" />
-        <button type="submit">
-            ADD TO CART
-        </button>
-    </p>
-</form>
-
-<?php endforeach; ?>
-
 </body>
 </html>
